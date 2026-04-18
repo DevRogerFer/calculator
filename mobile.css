@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.grid-container {
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+}
+
+.grid-container > button {
+  font-size: 1.5rem;
+}
+
+.grid-container > .output {
+  padding: 5px;
+}
+
+.grid-container > .output > .previous-operand {
+  font-size: 1rem;
+}
+
+.grid-container > .output > .current-operand {
+  font-size: 1.75rem;
+}
